@@ -645,33 +645,6 @@ section { padding: 4rem 0; }
   text-align: center;
 }
 
-/* Dev note for waitlist URL */
-.dev-note {
-  margin-top: 1.5rem;
-  padding: 1rem 1.1rem;
-  border-radius: var(--radius-sm);
-  background: #0a0c10;
-  border: 1px dashed rgba(255, 255, 255, 0.18);
-  font-family: var(--mono);
-  font-size: 0.75rem;
-  color: var(--text-dim);
-  line-height: 1.55;
-}
-
-.dev-note strong {
-  color: var(--warning);
-  font-family: var(--font);
-  font-size: 0.8rem;
-  display: block;
-  margin-bottom: 0.35rem;
-  letter-spacing: 0;
-}
-
-.dev-note code {
-  color: #a5b4fc;
-  word-break: break-all;
-}
-
 /* Success state */
 .form-success {
   display: none;
@@ -1086,14 +1059,7 @@ section { padding: 4rem 0; }
           <h3>You’re on the list</h3>
           <p>Thanks — we’ll be in touch when Feedback Board is ready. If you asked for Canny CSV import, that signal is saved.</p>
         </div>
-
-        <aside class="dev-note" aria-label="Developer note for waitlist URL">
-          <strong>⚙ Dev: paste waitlist URL here</strong>
-          Set <code>WAITLIST_ACTION_URL</code> in <code>index.html</code> (script near bottom),
-          or put a Formspree / Tally / Loops endpoint in the form’s <code>action=""</code> attribute.
-          Right now submissions also save to <code>localStorage</code> key <code>fb_waitlist</code>.
-        </aside>
-      </div>
+</div>
     </div>
   </section>
 
